@@ -1,13 +1,15 @@
-import Link from "next/link";
+import styles from './global.module.css'
+import Image from "next/image";
 
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
-      <p>Hello World! This is the Home page</p>
-      <p>
-        Visit the <Link href="/about">About</Link> page.
-      </p>
+    <div >
+       <Image
+            src="/app_bg_image.webp" 
+            alt="Top Image"
+            layout="fill"
+            objectFit="cover"
+          />
     </div>
   );
 };
