@@ -23,7 +23,8 @@ const ActionArea = () => {
   }
 
   return <div className={styles.wrapper}>
-  <textarea value={inputStr} className={styles.textarea} onChange={(e) => handleChangeTextAea(e)}></textarea>
+    <label htmlFor="textarea">入力欄</label>
+  <textarea  value={inputStr} className={styles.textarea} onChange={(e) => handleChangeTextAea(e)}></textarea>
   <div className={styles.actions}>
     <button className={styles.actionBtn} onClick={handleClickCheckInputStrLengthBtn}>字数を数える</button>
     <button className={styles.actionBtn} onClick={handleClickResetBtn}>リセット</button>
